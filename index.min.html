@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
+        <title>ai-radu-portfolio</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="border">
+            <a href="https://linktr.ee/ai.radu" target="_blank"><button style="flex: 1;">linktree</button></a>
+            <h1>ai.radu</h1>
+        </header>
+        <div class="border" style="display: flex; gap: 0px;">
+            <button id="btn1" style="flex: 1;" onclick="loadPage('page1.min.html', 'btn1')">Games</button>
+            <button id="btn2" style="flex: 1;" onclick="loadPage('page2.min.html', 'btn2')">Programs</button>
+            <button id="btn3" style="flex: 1;" onclick="loadPage('page3.min.html', 'btn3')">3D Models</button>
+            <button id="btn4" style="flex: 1;" onclick="loadPage('page4.min.html', 'btn4')">Textures</button>
+            <button id="btn5" style="flex: 1;" onclick="loadPage('page5.min.html', 'btn5')">Audio</button>
+        </div>
+        <div class="container">
+            <iframe id="content" src="page1.min.html"></iframe>
+        </div>
+        <footer class="border" style="display: flex; gap: 0px;">
+            <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><button style="flex: 1;">CC0 1.0</button></a>
+            <p>Everything you see on this website is released under CC0 1.0 Universal (Public Domain Dedication).</p>
+        </footer>
+        <script>
+            const buttons = ['btn1','btn2','btn3','btn4', 'btn5'];
+            function loadPage(page, activeId) {
+            document.getElementById('content').src = page;
+            buttons.forEach(id => document.getElementById(id).disabled = false);
+            document.getElementById(activeId).disabled = true;}
+            document.getElementById('btn1').disabled = true;
+        </script>
+    </body>
+</html>
