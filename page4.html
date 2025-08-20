@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>artwork</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p class="bn" style="display: flex; gap: 0px;">
+             <button id="btn1" style="flex: 1;" onclick="loadPage('page4.1.html', 'btn1')">Images</button>
+            <button id="btn2" style="flex: 1;" onclick="loadPage('page4.2.html', 'btn2')">Textures</button>
+            <p class="bn">Right Click > Save image as...</p>
+        </p>
+        <div class="container">
+            <iframe id="content" src="page4.1.html"></iframe>
+        </div>
+        <script>
+            const buttons = ['btn1','btn2'];
+            function loadPage(page, activeId) {
+            document.getElementById('content').src = page;
+            buttons.forEach(id => document.getElementById(id).disabled = false);
+            document.getElementById(activeId).disabled = true;}
+            document.getElementById('btn1').disabled = true;
+        </script>
+   </body>
+</html>
