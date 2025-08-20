@@ -75,7 +75,8 @@ img {
     margin: 0;
     padding: 0;
     width: 307px;
-    height: 180px;}
+    height: 180px;
+    display: block;}
 audio {
     margin: 0;
     padding: 0;
@@ -134,3 +135,4 @@ audio {
     text-align: left;}
 .b .r {
     text-align: right;}
+
