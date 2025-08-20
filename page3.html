@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="bm" style="display: flex; gap: 0px;">
+            <button id="btn1" style="flex: 1;" onclick="loadPage('page1.html', 'btn1')">Games</button>
+            <button id="btn2" style="flex: 1;" onclick="loadPage('page2.html', 'btn2')">Software</button>
+            <button id="btn3" style="flex: 1;" onclick="loadPage('page3.html', 'btn3')">3D Models</button>
+            <button id="btn4" style="flex: 1;" onclick="loadPage('page4.html', 'btn4')">Artwork</button>
+            <button id="btn5" style="flex: 1;" onclick="loadPage('page5.html', 'btn5')">Audio</button>
+            <h3>ai.radu</h3>
+            <a href="https://linktr.ee/ai.radu" target="_blank"><button style="flex: 1;">Contact</button></a>
+        </header>
+        <div class="container">
+            <iframe id="content" src="page1.html"></iframe>
+        </div>
+        <footer class="bm" style="display: flex; gap: 0px;">
+            <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><button style="flex: 1;">CC0 1.0</button></a>
+            <p>Everything you see on this website is released under CC0 1.0 Universal (Public Domain Dedication).</p>
+        </footer>
+        <script>
+            const buttons = ['btn1','btn2','btn3','btn4', 'btn5'];
+            function loadPage(page, activeId) {
+            document.getElementById('content').src = page;
+            buttons.forEach(id => document.getElementById(id).disabled = false);
+            document.getElementById(activeId).disabled = true;}
+            document.getElementById('btn1').disabled = true;
+        </script>
+    </body>
+</html>
