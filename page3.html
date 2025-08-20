@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0">
-        <title>portfolio</title>
+        <title>3d-models</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="bm" style="display: flex; gap: 0px;">
-            <button id="btn1" style="flex: 1;" onclick="loadPage('page1.html', 'btn1')">Games</button>
-            <button id="btn2" style="flex: 1;" onclick="loadPage('page2.html', 'btn2')">Software</button>
-            <button id="btn3" style="flex: 1;" onclick="loadPage('page3.html', 'btn3')">3D Models</button>
-            <button id="btn4" style="flex: 1;" onclick="loadPage('page4.html', 'btn4')">Artwork</button>
-            <button id="btn5" style="flex: 1;" onclick="loadPage('page5.html', 'btn5')">Audio</button>
-            <h3>ai.radu</h3>
-            <a href="https://linktr.ee/ai.radu" target="_blank"><button style="flex: 1;">Contact</button></a>
-        </header>
-        <div class="container">
-            <iframe id="content" src="page1.html"></iframe>
+        <div>
+            <p>O = Objects; V = Vertices; E = Edges; F = Faces; T = Triangles</p>
         </div>
-        <footer class="bm" style="display: flex; gap: 0px;">
-            <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><button style="flex: 1;">CC0 1.0</button></a>
-            <p>Everything you see on this website is released under CC0 1.0 Universal (Public Domain Dedication).</p>
-        </footer>
-        <script>
-            const buttons = ['btn1','btn2','btn3','btn4', 'btn5'];
-            function loadPage(page, activeId) {
-            document.getElementById('content').src = page;
-            buttons.forEach(id => document.getElementById(id).disabled = false);
-            document.getElementById(activeId).disabled = true;}
-            document.getElementById('btn1').disabled = true;
-        </script>
+        <ul>
+            <li>
+                <p class="b">Barrel 0<a href="https://drive.google.com/uc?export=download&id=1l7pSC_osQUSQtyj0mp2Xqx113Y64K4-Y"><button>Download .fbx</button></a></p>
+                <p class="b"><span>O 1 V 96 E 282 F 188 T 188</span> 21.6 KB</p>
+                <p><img src="3d models/Barrel_0.png" alt="SM_Barrel_0"></p>
+            </li>
+            <li>
+                <p class="b">Construction Pylon 0<a href="https://drive.google.com/uc?export=download&id=1Nbm5Jq-8ESVfRX6kTAZ8R-mLAYl6eKaR"><button>Download .fbx</button></a></p>
+                <p class="b"><span>O 1 V 144 E 432 F 288 T 288</span> 25.1 KB</p>
+                <p><img src="3d models/ConstructionPylon_0.png" alt="SM_Construction_Pylon_0"></p>
+            </li>
+            <li>
+                <p class="b">Desk Chair 0<a href="https://drive.google.com/uc?export=download&id=1mqWR2Ktg5QoaWgnB1VnIHyQNUfdzmIly"><button>Download .fbx</button></a></p>
+                <p class="b"><span>O 1 V 276 E 806 F 533 T 540</span> 32.2 KB</p>
+                <p><img src="3d models/Desk_Chair_0.png" alt="SM_Desktop_Chair_0"></p>
+            </li>
+            <li>
+                <p class="b">Plane<a href="https://drive.google.com/uc?export=download&id=1psM_Vm97T1TYkewK68MLqljIs4Km27p4"><button>Download .fbx</button></a></p>
+                <p class="b"><span>O 1 V 37 E 103 F 68 T 70</span> 21 KB</p>
+                <p><img src="3d models/Plane.png" alt="SM_Plane"></p>
+            </li>
+        </ul>
     </body>
 </html>
